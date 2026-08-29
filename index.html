@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07151f">
+<title>TrailOS Julien — Prépa Cathares 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<section class="hero">
+<div class="topline"><div class="brand">TRAIL<span>OS</span></div><div class="avatar">JS</div></div>
+<div class="kicker">Bloc automne 2026</div>
+<h1>Cap sur les<br>Hérétiques — 63K</h1>
+<p>Venerque → Petites Pyrénées 35K → Trail des Hérétiques. Objectif : arriver solide, frais et avec une nutrition parfaitement rodée.</p>
+<div class="countdown"><div class="bigcard"><b id="daysNext">—</b><span id="nextLabel">jours avant prochaine course</span></div><div class="smallcard"><b>65 g/h</b><span>cible glucides ultra</span></div></div>
+</section>
+
+<main>
+<section id="home">
+<div class="section-head"><h2>Courses verrouillées</h2><small>Automne 2026</small></div>
+<div id="raceCards"></div>
+<div class="section-head"><h2>État du jour</h2><small>Dernières données</small></div>
+<div class="metrics"><div class="metric"><b id="mWeight">73,0</b><span>kg</span></div><div class="metric"><b id="mSleep">—</b><span>h sommeil</span></div><div class="metric"><b id="mFatigue">—</b><span>fatigue /10</span></div></div>
+<div class="section-head"><h2>Consigne coach</h2><small>Adaptation simple</small></div>
+<div class="callout" id="homeAdvice">Renseigne ton état dans Suivi pour adapter la séance.</div>
+<div class="section-head"><h2>Architecture du bloc</h2><small>8 semaines</small></div>
+<div class="card">
+<div class="row"><div class="icon">⚡️</div><div><h3>1. Venerque — vitesse / relance</h3><p>Affûtage court puis course contrôlée le 6 septembre.</p></div></div>
+<div class="row" style="margin-top:14px"><div class="icon">⛰️</div><div><h3>2. Construction spécifique</h3><p>Deux semaines de charge, une semaine allégée, puis répétition générale sur 35 km.</p></div></div>
+<div class="row" style="margin-top:14px"><div class="icon">🔥</div><div><h3>3. Affûtage Cathares</h3><p>20 jours entre le 35K et les Hérétiques : récupération, rappel de qualité, puis baisse progressive du volume.</p></div></div>
+</div>
+</section>
+
+<section id="plan" class="hidden">
+<div class="section-head"><h2>Préparation complète</h2><small>31 août → 24 octobre</small></div>
+<div class="pills" id="weekTabs"></div>
+<div class="card" id="weekCard"><div id="weekSummary" class="callout" style="margin-bottom:8px"></div><div id="sessions"></div></div>
+<div class="callout warning"><b>Règle genou / TFL :</b> douleur ≥ 3/10 pendant la course, modification de foulée ou douleur qui augmente en descente = fin de l’intensité. Remplacer par vélo/endurance douce et réévaluer.</div>
+</section>
+
+<section id="nutrition" class="hidden">
+<div class="section-head"><h2>Plan nutrition</h2><small>entraînement + courses</small></div>
+<div class="nutri-grid">
+<div class="nutri"><b>65 g/h</b><span>glucides cible actuelle</span></div>
+<div class="nutri"><b>450–750 ml/h</b><span>base hydratation à adapter</span></div>
+<div class="nutri"><b>600–800 mg/L</b><span>sodium de départ</span></div>
+<div class="nutri"><b>20–25 min</b><span>rythme de prises</span></div>
+</div>
+
+<div class="section-head"><h2>Principe</h2><small>simple et répétable</small></div>
+<div class="card">
+<div class="hour"><strong>Boisson</strong><div>500 ml de boisson glucidique apportant ~30–35 g de glucides sur l’heure.</div></div>
+<div class="hour"><strong>Solide/gel</strong><div>Compléter avec ~30–35 g : gel, pâte de fruit, compote énergétique ou demi-barre bien tolérée.</div></div>
+<div class="hour"><strong>Fréquence</strong><div>Petite prise toutes les 20–25 min. Ne jamais attendre la faim.</div></div>
+<div class="hour"><strong>Sodium</strong><div>Commencer autour de 600–800 mg/L, puis individualiser selon chaleur et sudation. Ne pas boire au-delà de la soif juste pour “tenir un quota”.</div></div>
+</div>
+
+<div class="section-head"><h2>Petites Pyrénées — 35K</h2><small>répétition générale</small></div>
+<div class="card">
+<div class="hour"><strong>-3 h</strong><div>Petit-déjeuner connu : 1,5–2 g/kg de glucides, peu de fibres et peu de gras. Eau normalement, sans surboire.</div></div>
+<div class="hour"><strong>0–1 h</strong><div>500 ml boisson = 30–35 g + 1 gel/compote = 30 g. Total ≈ 60–65 g.</div></div>
+<div class="hour"><strong>1–2 h</strong><div>Même base. Tester un aliment plus solide si envie : demi-barre ou pâte de fruit, sans dépasser la cible.</div></div>
+<div class="hour"><strong>2 h+</strong><div>Revenir au plus facile à avaler : boisson + gel/compote. Garder caféine seulement si déjà testée.</div></div>
+</div>
+<div class="callout">Objectif du 35K : valider <b>65 g/h sans gêne digestive</b>, le matériel, la boisson, le rythme des prises et la tolérance après 3 h. C’est un test, pas une course nutritionnellement improvisée.</div>
+
+<div class="section-head"><h2>Hérétiques — 63K</h2><small>stratégie cible</small></div>
+<div class="card">
+<div class="hour"><strong>Veille</strong><div>Repas riche en glucides, habituel, peu fibreux. Pas de “gavage”, pas d’aliment nouveau.</div></div>
+<div class="hour"><strong>01:00</strong><div>Pour un départ à 04:00 : petit-déjeuner digeste ~3 h avant. Préparer vêtements, flasques et portions la veille pour limiter le stress.</div></div>
+<div class="hour"><strong>04:00</strong><div>Commencer les glucides dans les 20 premières minutes, même si l’appétit est faible.</div></div>
+<div class="hour"><strong>0–4 h</strong><div>65 g/h réguliers. Exemple : 500 ml boisson à 30–35 g + 1 gel de 30 g/h.</div></div>
+<div class="hour"><strong>4 h+</strong><div>Si l’estomac est bon : rester à 65 g/h. Introduire un peu de salé aux ravitos pour le confort gustatif, sans remplacer les glucides.</div></div>
+<div class="hour"><strong>Fin</strong><div>Caféine éventuelle sur le dernier tiers uniquement si déjà testée à l’entraînement et si elle ne perturbe pas ton estomac.</div></div>
+</div>
+<div class="callout warning">Le besoin hydrique réel dépend fortement de la météo et de ta sudation. 450–750 ml/h est une plage pratique de départ, pas une obligation. Évite surtout de forcer de grandes quantités d’eau en l’absence de soif.</div>
+</section>
+
+<section id="track" class="hidden">
+<div class="section-head"><h2>Suivi</h2><small>poids · sommeil · fatigue · douleur</small></div>
+<div class="card">
+<div class="form-grid">
+<div><label>Date</label><input id="logDate" type="date"></div>
+<div><label>Poids (kg)</label><input id="logWeight" type="number" step="0.1"></div>
+<div><label>Sommeil (h)</label><input id="logSleep" type="number" step="0.1"></div>
+<div><label>Fatigue /10</label><input id="logFatigue" type="number" min="0" max="10"></div>
+<div><label>Douleur /10</label><input id="logPain" type="number" min="0" max="10"></div>
+<div><label>RPE /10</label><input id="logRpe" type="number" min="0" max="10"></div>
+</div>
+<div style="margin-top:10px"><label>Notes</label><textarea id="logNotes" rows="3"></textarea></div>
+<button class="btn primary full" onclick="saveLog()">Enregistrer</button>
+</div>
+<div class="card"><h3 style="margin-top:0;font-size:.9rem">Historique récent</h3><div id="history"></div></div>
+</section>
+
+<section id="coach" class="hidden">
+<div class="section-head"><h2>Coach</h2><small>règles de pilotage</small></div>
+<div class="card">
+<div class="row"><div class="icon">🟢</div><div><h3>Vert</h3><p>Douleur 0–1/10, fatigue ≤4, sommeil correct : séance prévue.</p></div></div>
+<div class="row" style="margin-top:13px"><div class="icon">🟠</div><div><h3>Orange</h3><p>Douleur 2/10, fatigue 5–6 ou sommeil court : -20 % de volume, pas de finish intense.</p></div></div>
+<div class="row" style="margin-top:13px"><div class="icon">🔴</div><div><h3>Rouge</h3><p>Douleur ≥3/10, modification de foulée, fatigue ≥7 : pas de course intense. Repos, vélo doux ou marche.</p></div></div>
+</div>
+<div class="callout" id="coachAdvice">Ajoute un relevé dans Suivi pour avoir une recommandation.</div>
+<div class="section-head"><h2>Priorités jusqu’aux Cathares</h2></div>
+<div class="card">
+<div class="hour"><strong>1</strong><div>Arriver sain : aucune séance n’a plus de valeur que la continuité.</div></div>
+<div class="hour"><strong>2</strong><div>Muscler les descentes : step-down, fentes arrière, mollets et descentes contrôlées.</div></div>
+<div class="hour"><strong>3</strong><div>Roder 65 g/h : toutes les sorties >1 h 30 deviennent aussi des séances digestives.</div></div>
+<div class="hour"><strong>4</strong><div>35K du 4 octobre à RPE 5–6/10 sur les 25 premiers km ; accélération seulement si tout est vert.</div></div>
+</div>
+</section>
+</main>
+</div>
+
+<nav class="nav"><div class="nav-inner">
+<button class="active" onclick="go('home',this)"><strong>⌂</strong>Accueil</button>
+<button onclick="go('plan',this)"><strong>▦</strong>Plan</button>
+<button onclick="go('nutrition',this)"><strong>⚡</strong>Nutrition</button>
+<button onclick="go('track',this)"><strong>＋</strong>Suivi</button>
+<button onclick="go('coach',this)"><strong>◎</strong>Coach</button>
+</div></nav>
+
+<script src="app.js"></script>
+</body>
+</html>
